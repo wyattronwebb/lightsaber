@@ -1,0 +1,415 @@
+import simplegui
+blade = "#021ef0"
+outer = "#0dbaff"
+redblade = "#db0000"
+redouter = "#f52900"
+def draw_handler(canvas):
+    ''' Draws the outdoor scene including the animation '''
+
+    global count
+    count = count + 1
+    global colors
+
+    if (count>150):
+        count = 0
+    if (count==20):
+        colors [36][3] = outer
+        colors [36][7] = blade
+        colors [36][8] = outer
+    if (count == 20):
+        colors [35][3] = outer
+        colors [35][4] = blade
+        colors [35][7] = blade
+        colors [35][8] = outer
+    if (count == 21):
+        colors [34][3] = outer
+        colors [34][4] = blade
+        colors [34][7] = blade
+        colors [34][8] = outer
+    if (count == 21):
+        colors [33][3] = outer
+        colors [33][4] = blade
+        colors [33][7] = blade
+        colors [33][8] = outer
+    if (count == 22):
+        colors [32][3] = outer
+        colors [32][4] = blade
+        colors [32][7] = blade
+        colors [32][8] = outer
+    if (count == 22):
+        colors [31][3] = outer
+        colors [31][4] = blade
+        colors [31][7] = blade
+        colors [31][8] = outer
+    if (count == 23):
+        colors [30][3] = outer
+        colors [30][4] = blade
+        colors [30][7] = blade
+        colors [30][8] = outer
+    if (count == 23):
+        colors [29][3] = outer
+        colors [29][4] = blade
+        colors [29][7] = blade
+        colors [29][8] = outer
+    if (count == 24):
+        colors [28][3] = outer
+        colors [28][4] = blade
+        colors [28][7] = blade
+        colors [28][8] = outer
+    if (count == 24):
+        colors [27][3] = outer
+        colors [27][4] = blade
+        colors [27][7] = blade
+        colors [27][8] = outer
+    if (count == 25):
+        colors [26][3] = outer
+        colors [26][4] = blade
+        colors [26][7] = blade
+        colors [26][8] = outer
+    if (count == 25):
+        colors [25][3] = outer
+        colors [25][4] = blade
+        colors [25][7] = blade
+        colors [25][8] = outer
+    if (count == 26):
+        colors [24][3] = outer
+        colors [24][4] = blade
+        colors [24][7] = blade
+        colors [24][8] = outer
+    if (count == 26):
+        colors [23][3] = outer
+        colors [23][4] = blade
+        colors [23][7] = blade
+        colors [23][8] = outer
+    if (count == 27):
+        colors [22][3] = outer
+        colors [22][4] = blade
+        colors [22][7] = blade
+        colors [22][8] = outer
+    if (count == 27):
+        colors [21][3] = outer
+        colors [21][4] = blade
+        colors [21][7] = blade
+        colors [21][8] = outer
+    if (count == 28):
+        colors [20][3] = outer
+        colors [20][4] = blade
+        colors [20][7] = blade
+        colors [20][8] = outer
+    if (count == 28):
+        colors [19][3] = outer
+        colors [19][4] = blade
+        colors [19][7] = blade
+        colors [19][8] = outer
+    if (count == 29):
+        colors [18][3] = outer
+        colors [18][4] = blade
+        colors [18][7] = blade
+        colors [18][8] = outer
+    if (count == 29):
+        colors [17][3] = outer
+        colors [17][4] = blade
+        colors [17][7] = blade
+        colors [17][8] = outer
+    if (count == 30):
+        colors [16][3] = outer
+        colors [16][4] = blade
+        colors [16][7] = blade
+        colors [16][8] = outer
+    if (count == 30):
+        colors [15][3] = outer
+        colors [15][4] = blade
+        colors [15][7] = blade
+        colors [15][8] = outer
+    if (count == 31):
+        colors [14][3] = outer
+        colors [14][4] = blade
+        colors [14][7] = blade
+        colors [14][8] = outer
+    if (count == 31):
+        colors [13][3] = outer
+        colors [13][4] = blade
+        colors [13][7] = blade
+        colors [13][8] = outer
+    if (count == 32):
+        colors [12][3] = outer
+        colors [12][4] = blade
+        colors [12][7] = blade
+        colors [12][8] = outer
+    if (count == 32):
+        colors [11][3] = outer
+        colors [11][4] = blade
+        colors [11][7] = blade
+        colors [11][8] = outer
+    if (count == 33):
+        colors [10][3] = outer
+        colors [10][4] = blade
+        colors [10][7] = blade
+        colors [10][8] = outer
+    if (count == 33):
+        colors [9][3] = outer
+        colors [9][4] = blade
+        colors [9][7] = blade
+        colors [9][8] = outer
+    if (count == 34):
+        colors [8][3] = outer
+        colors [8][4] = blade
+        colors [8][7] = blade
+        colors [8][8] = outer
+    if (count == 34):
+        colors [7][3] = outer
+        colors [7][4] = blade
+        colors [7][7] = blade
+        colors [7][8] = outer
+    if (count == 35):
+        colors [6][4] = outer
+        colors [6][5] = blade
+        colors [6][6] = blade
+        colors [6][7] = outer
+    if (count == 35):
+        colors [5][5] = outer
+        colors [5][6] = outer
+        
+        
+    if (count==70):
+        colors [36][3] = redouter
+        colors [36][7] = redblade
+        colors [36][8] = redouter
+    if (count == 70):
+        colors [35][3] = redouter
+        colors [35][4] = redblade
+        colors [35][7] = redblade
+        colors [35][8] = redouter
+    if (count == 71):
+        colors [34][3] = redouter
+        colors [34][4] = redblade
+        colors [34][7] = redblade
+        colors [34][8] = redouter
+    if (count == 71):
+        colors [33][3] = redouter
+        colors [33][4] = redblade
+        colors [33][7] = redblade
+        colors [33][8] = redouter
+    if (count == 72):
+        colors [32][3] = redouter
+        colors [32][4] = redblade
+        colors [32][7] = redblade
+        colors [32][8] = redouter
+    if (count == 72):
+        colors [31][3] = redouter
+        colors [31][4] = redblade
+        colors [31][7] = redblade
+        colors [31][8] = redouter
+    if (count == 73):
+        colors [30][3] = redouter
+        colors [30][4] = redblade
+        colors [30][7] = redblade
+        colors [30][8] = redouter
+    if (count == 73):
+        colors [29][3] = redouter
+        colors [29][4] = redblade
+        colors [29][7] = redblade
+        colors [29][8] = redouter
+    if (count == 74):
+        colors [28][3] = redouter
+        colors [28][4] = redblade
+        colors [28][7] = redblade
+        colors [28][8] = redouter
+    if (count == 74):
+        colors [27][3] = redouter
+        colors [27][4] = redblade
+        colors [27][7] = redblade
+        colors [27][8] = redouter
+    if (count == 75):
+        colors [26][3] = redouter
+        colors [26][4] = redblade
+        colors [26][7] = redblade
+        colors [26][8] = redouter
+    if (count == 75):
+        colors [25][3] = redouter
+        colors [25][4] = redblade
+        colors [25][7] = redblade
+        colors [25][8] = redouter
+    if (count == 76):
+        colors [24][3] = redouter
+        colors [24][4] = redblade
+        colors [24][7] = redblade
+        colors [24][8] = redouter
+    if (count == 76):
+        colors [23][3] = redouter
+        colors [23][4] = redblade
+        colors [23][7] = redblade
+        colors [23][8] = redouter
+    if (count == 77):
+        colors [22][3] = redouter
+        colors [22][4] = redblade
+        colors [22][7] = redblade
+        colors [22][8] = redouter
+    if (count == 77):
+        colors [21][3] = redouter
+        colors [21][4] = redblade
+        colors [21][7] = redblade
+        colors [21][8] = redouter
+    if (count == 78):
+        colors [20][3] = redouter
+        colors [20][4] = redblade
+        colors [20][7] = redblade
+        colors [20][8] = redouter
+    if (count == 78):
+        colors [19][3] = redouter
+        colors [19][4] = redblade
+        colors [19][7] = redblade
+        colors [19][8] = redouter
+    if (count == 79):
+        colors [18][3] = redouter
+        colors [18][4] = redblade
+        colors [18][7] = redblade
+        colors [18][8] = redouter
+    if (count == 79):
+        colors [17][3] = redouter
+        colors [17][4] = redblade
+        colors [17][7] = redblade
+        colors [17][8] = redouter
+    if (count == 80):
+        colors [16][3] = redouter
+        colors [16][4] = redblade
+        colors [16][7] = redblade
+        colors [16][8] = redouter
+    if (count == 80):
+        colors [15][3] = redouter
+        colors [15][4] = redblade
+        colors [15][7] = redblade
+        colors [15][8] = redouter
+    if (count == 81):
+        colors [14][3] = redouter
+        colors [14][4] = redblade
+        colors [14][7] = redblade
+        colors [14][8] = redouter
+    if (count == 81):
+        colors [13][3] = redouter
+        colors [13][4] = redblade
+        colors [13][7] = redblade
+        colors [13][8] = redouter
+    if (count == 82):
+        colors [12][3] = redouter
+        colors [12][4] = redblade
+        colors [12][7] = redblade
+        colors [12][8] = redouter
+    if (count == 82):
+        colors [11][3] = redouter
+        colors [11][4] = redblade
+        colors [11][7] = redblade
+        colors [11][8] = redouter
+    if (count == 83):
+        colors [10][3] = redouter
+        colors [10][4] = redblade
+        colors [10][7] = redblade
+        colors [10][8] = redouter
+    if (count == 83):
+        colors [9][3] = redouter
+        colors [9][4] = redblade
+        colors [9][7] = redblade
+        colors [9][8] = redouter
+    if (count == 84):
+        colors [8][3] = redouter
+        colors [8][4] = redblade
+        colors [8][7] = redblade
+        colors [8][8] = redouter
+    if (count == 84):
+        colors [7][3] = redouter
+        colors [7][4] = redblade
+        colors [7][7] = redblade
+        colors [7][8] = redouter
+    if (count == 85):
+        colors [6][4] = redouter
+        colors [6][5] = redblade
+        colors [6][6] = redblade
+        colors [6][7] = redouter
+    if (count == 85):
+        colors [5][5] = redouter
+        colors [5][6] = redouter
+        
+        
+    row = 0
+    col = 0
+    for r in range(1, 650, 10):
+        for c in range(1, 110, 10):
+            canvas.draw_polygon([(c, r), (c + 10, r), (c + 10, r + 10), (c, r + 10)], 0.0001, "black", colors[row][col])
+            col = col + 1
+        row = row + 1
+        col = 0
+
+# ********** MAIN **********
+count = 1
+frame = simplegui.create_frame("Anakins saber", 110, 650)
+frame.set_draw_handler(draw_handler)
+frame.start()
+    
+silver = "#a6adad"
+colors = []
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","White","White","White","White","White","White","White","White","White","White"])
+colors.append(["White","white","white","white",silver,"white","White","White","White","White","white"])
+colors.append(["White","white",silver,silver,silver,silver,"Grey","Grey","white","White","White"])
+colors.append(["White",silver,silver,silver,silver,silver,silver,silver,"White","White","White"])
+colors.append(["White","White","white","White",silver,silver,silver,silver,"White","white","White"])
+colors.append(["White","White","white",silver,silver,silver,"Black",silver,"white","White","White"])
+colors.append(["White","White","white",silver,silver,silver,"Black",silver,"white","White","White"])
+colors.append(["White","White","white","White",silver,silver,silver,silver,silver,"White","white"])
+colors.append(["White","White","white","White",silver,silver,silver,silver,silver,"white","White"])
+colors.append(["White","White","white","White",silver,silver,silver,silver,"White","white","White"])
+colors.append(["White","White","white","White",silver,silver,silver,silver,"White","white","White"])
+colors.append(["White","White","white","White",silver,silver,silver,silver,"White","white","White"])
+colors.append(["White","White","white","White",silver,silver,silver,silver,"White","white","White"])
+colors.append(["White","White","white","White",silver,silver,silver,silver,"White","white","White"])
+colors.append(["White","White","white","White",silver,"white",silver,"Grey","white","White","white"])
+colors.append(["White","White","white","White",silver,"white",silver,"Grey","white","White","white"])
+colors.append(["White","White","white","White",silver,"white",silver,"Grey","white","White","white"])
+colors.append(["White","White","white","White",silver,"white",silver,"Grey","white","White","white"])
+colors.append(["White","White","white","White",silver,silver,silver,silver,"White","white","White"])
+colors.append(["White","White","white","Black",silver,"Black","Black",silver,"Black","White","white"])
+colors.append(["White","White","white","Black",silver,"Black","Black",silver,"Black","White","white"])
+colors.append(["White","White","white","Black",silver,"Black","Black",silver,"Black","White","white"])
+colors.append(["White","White","white","Black",silver,"Black","Black",silver,"Black","White","white"])
+colors.append(["White","White","white","Black",silver,"Black","Black",silver,"Black","White","white"])
+colors.append(["White","White","white","Black",silver,"Black","Black",silver,"Black","White","white"])
+colors.append(["White","White","white","Black",silver,"Black","Black",silver,"Black","White","white"])
+colors.append(["White","White","white","Black",silver,"Black","Black",silver,"Black","White","white"])
+colors.append(["White","White","white","Black",silver,"Black","Black",silver,"Black","White","white"])
+colors.append(["White","White","white","Black",silver,"Black","Black",silver,"Black","White","white"])
+colors.append(["White","White","white","Black",silver,"Black","Black",silver,"Black","White","white"])
+colors.append(["White","White","White","White","White","White""White","White","White","White","White"])
